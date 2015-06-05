@@ -5,7 +5,7 @@ plotHist <- function(df) {
   }
   
   library(datasets)
-  hist(df$Global_active_power,col="RED")
+  hist(df$Global_active_power,col="RED", main="Global Active Power", xlab="Global Active Power (kilowatts)")
   dev.copy(png,file="./data/plot1.png")
   dev.off() 
 }
