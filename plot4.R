@@ -14,6 +14,6 @@ plot4Graphs <- function(df) {
   lines(c1Data1$DateTime, c1Data1$Sub_metering_2, col="BLUE", type="l")
   lines(c1Data1$DateTime, c1Data1$Sub_metering_3, col="RED", type="l")
   legend("topright",col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd=1)
-  plot(c1Data1$DateTime, c1Data1$Voltage, type="l", ylab="Global Reactive Power", xlab="datetime")
+  plot(c1Data1$DateTime, c1Data1$Global_reactive_power, type="l", ylab="Global Reactive Power", xlab="datetime")
   dev.off() 
 }
